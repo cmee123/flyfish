@@ -3208,7 +3208,7 @@ function HomeScreen() {
                           (n == 1) | (anglers[n].quantity > 0) ? (
                             <div className="automationItem" id={n}>
                               <p className="autoQuantity" id={`aq${n}`}>
-                                {angler.quantity}
+                                {truncateNum(angler.quantity)}
                               </p>
                               <div className="flex">
                                 <p className="autoTitle">{angler.name}</p>
